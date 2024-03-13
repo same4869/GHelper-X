@@ -1,6 +1,20 @@
 {
   "app": {
-    "signingConfigs": [],
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "C:\\Users\\XWANG\\.ohos\\config\\default_GHelper-X_t2I-cXM10n3lU-o4oqmUE4QQ17uFb-VJqRyiyMxAPV8=.cer",
+          "storePassword": "0000001B77BD202D4A97671DA43828DEEB72E0F46C9F81E9265ABB5A55806155181CD0E9B8744E57257832",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001B63162756C75B9503C292EB4DFEFB83AE89970FD8C0DE7D9826F22E46D07B42C911A0C9CC8D9C14",
+          "profile": "C:\\Users\\XWANG\\.ohos\\config\\default_GHelper-X_t2I-cXM10n3lU-o4oqmUE4QQ17uFb-VJqRyiyMxAPV8=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "C:\\Users\\XWANG\\.ohos\\config\\default_GHelper-X_t2I-cXM10n3lU-o4oqmUE4QQ17uFb-VJqRyiyMxAPV8=.p12"
+        }
+      }
+    ],
     "products": [
       {
         "name": "default",
