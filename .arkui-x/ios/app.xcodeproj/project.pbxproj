@@ -15,6 +15,14 @@
 		F0AF1ADD27D36856008C55DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0AF1ADC27D36856008C55DD /* Assets.xcassets */; };
 		F0AF1AE027D36856008C55DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0AF1ADE27D36856008C55DD /* LaunchScreen.storyboard */; };
 		F0AF1AE327D36856008C55DD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F0AF1AE227D36856008C55DD /* main.m */; };
+		C65DF52604FC9FD02D122E77 /* libdeviceinfo.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 831AB3A636EBD0F5510433D7 /* libdeviceinfo.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FE295D9B1B7D6B33AC25C077 /* libdeviceinfo.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 831AB3A636EBD0F5510433D7 /* libdeviceinfo.xcframework */; };
+		7E9B237FA1EF8BD6242963BA /* libbridge.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C3D348F4B5F319D6F79C2324 /* libbridge.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E680F4D7FF845D658471DBE0 /* libbridge.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3D348F4B5F319D6F79C2324 /* libbridge.xcframework */; };
+		6D6E221568D7D4E262EE5D8F /* libhilog.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5B3FA32B15BB6CD44462A503 /* libhilog.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		856A29E2370EAA6A41748467 /* libhilog.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B3FA32B15BB6CD44462A503 /* libhilog.xcframework */; };
+		4BDAD1EF419B73EEECD6AB69 /* libpromptaction.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E4CED8E2E0642B41F78F7C13 /* libpromptaction.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A6E80C72DD4768AE7C4697FC /* libpromptaction.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4CED8E2E0642B41F78F7C13 /* libpromptaction.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,6 +32,10 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				C65DF52604FC9FD02D122E77 /* libdeviceinfo.xcframework in Embed Frameworks */,
+				7E9B237FA1EF8BD6242963BA /* libbridge.xcframework in Embed Frameworks */,
+				6D6E221568D7D4E262EE5D8F /* libhilog.xcframework in Embed Frameworks */,
+				4BDAD1EF419B73EEECD6AB69 /* libpromptaction.xcframework in Embed Frameworks */,
 				89E41E4729F505CD0004F33E /* libarkui_ios.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -43,6 +55,10 @@
 		F0AF1ADF27D36856008C55DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F0AF1AE127D36856008C55DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0AF1AE227D36856008C55DD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		831AB3A636EBD0F5510433D7 /* libdeviceinfo.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libdeviceinfo.xcframework; path = frameworks/libdeviceinfo.xcframework; sourceTree = "<group>"; };
+		C3D348F4B5F319D6F79C2324 /* libbridge.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libbridge.xcframework; path = frameworks/libbridge.xcframework; sourceTree = "<group>"; };
+		5B3FA32B15BB6CD44462A503 /* libhilog.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libhilog.xcframework; path = frameworks/libhilog.xcframework; sourceTree = "<group>"; };
+		E4CED8E2E0642B41F78F7C13 /* libpromptaction.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = libpromptaction.xcframework; path = frameworks/libpromptaction.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +66,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE295D9B1B7D6B33AC25C077 /* libdeviceinfo.xcframework in Frameworks */,
+				E680F4D7FF845D658471DBE0 /* libbridge.xcframework in Frameworks */,
+				856A29E2370EAA6A41748467 /* libhilog.xcframework in Frameworks */,
+				A6E80C72DD4768AE7C4697FC /* libpromptaction.xcframework in Frameworks */,
 				89E41E4629F505CD0004F33E /* libarkui_ios.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -94,6 +114,10 @@
 			isa = PBXGroup;
 			children = (
 				DF9C1B5D28B9FC3A005DCF58 /* libarkui_ios.xcframework */,
+				831AB3A636EBD0F5510433D7 /* libdeviceinfo.xcframework */,
+				C3D348F4B5F319D6F79C2324 /* libbridge.xcframework */,
+				5B3FA32B15BB6CD44462A503 /* libhilog.xcframework */,
+				E4CED8E2E0642B41F78F7C13 /* libpromptaction.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

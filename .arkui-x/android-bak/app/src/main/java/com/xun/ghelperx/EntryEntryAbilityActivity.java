@@ -19,6 +19,9 @@ public class EntryEntryAbilityActivity extends StageActivity {
     protected void onCreate(Bundle savedInstanceState) {
         Log.e("HiHelloWorld", "EntryEntryAbilityActivity");
 
+        // 建立与ArkUI侧同名的平台桥接，即可用于消息传递
+        new Bridge(this, "Bridge", getInstanceId());
+
         setInstanceName("com.xun.ghelperx:entry:EntryAbility:");
         super.onCreate(savedInstanceState);
     }
