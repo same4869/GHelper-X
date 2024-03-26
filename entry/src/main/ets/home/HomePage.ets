@@ -2,10 +2,16 @@ import bridge from '@arkui-x.bridge';
 import deviceInfo from '@ohos.deviceInfo';
 import { MToast } from '../utils/MToast';
 import { MLog } from '../utils/log/MLog';
+import { HomeViewModel, ObservedArray, Person } from './HomeViewModel';
 
 @Component
 export struct HomePage {
   private bridgeImpl: bridge.BridgeObject | null = null;
+  @State homeViewModel: HomeViewModel = new HomeViewModel()
+
+  // @State me: Person = this.homeViewModel.me
+
+  // @ObjectLink nums: ObservedArray<number>
 
   aboutToAppear(): void {
     MLog.debug('aboutToAppear')
@@ -18,7 +24,7 @@ export struct HomePage {
     } else if (osName.startsWith('iOS')) {
       this.bridgeImpl = bridge.createBridge("Bridge")
       // iOS应用平台上业务逻辑
-    } else if (osName.startsWith('OpenHarmony')){
+    } else if (osName.startsWith('OpenHarmony')) {
       // OpenHarmony应用平台上业务逻辑
     }
     MLog.debug('this.bridgeImpl = ' + this.bridgeImpl)
@@ -63,6 +69,26 @@ export struct HomePage {
           })
         }
       })
+      Text(this.homeViewModel.index + " " + this.homeViewModel.nums.length + " name:" + this.homeViewModel.me.name + " age:" + this.homeViewModel.me.age + " gf:" + this.homeViewModel.me.gf?.name + " " + this.homeViewModel.me.gf?.age)
+        .fontSize(22)
+      Child({ p: this.homeViewModel.me })
+      Button("通过VM改变数据").onClick(event => {
+        this.homeViewModel.getNums([1, 3, 4, 5, 6, 7])
+        // this.homeViewModel.getIndex()
+
+        // this.homeViewModel.getPerson()
+
+        MToast.showToast(this.homeViewModel.nums.length + "  !!")
+      })
     }.height("100%").width("100%").backgroundColor("#00ffff")
+  }
+}
+
+@Component
+struct Child {
+  @ObjectLink p: Person
+
+  build() {
+    Text(this.p.name + " " + this.p.age)
   }
 }

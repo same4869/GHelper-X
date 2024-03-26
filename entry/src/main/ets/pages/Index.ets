@@ -1,5 +1,6 @@
 import { CommonConstants } from '../constants/CommonConstants'
 import { HomePage } from '../home/HomePage'
+import { HomeViewModel } from '../home/HomeViewModel'
 import { TabItem } from '../model/TabItem'
 import { MoneyPage } from '../money/MoneyPage'
 import { WalkPage } from '../walk/WalkPage'
@@ -10,6 +11,7 @@ import { MinePage } from '../mine/MinePage'
 @Component
 struct Index {
   @State selectedIndex: number = 0
+  // @State aa: HomeViewModel = new HomeViewModel()
 
   build() {
     Column() {
