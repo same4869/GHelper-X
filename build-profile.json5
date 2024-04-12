@@ -32,6 +32,14 @@
           ]
         }
       ]
+    },
+    {
+      "name": "commonlib",
+      "srcPath": "./common/commonlib"
+    },
+    {
+      "name": "giraffe",
+      "srcPath": "./common/giraffe",
     }
   ]
 }
