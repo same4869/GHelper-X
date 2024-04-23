@@ -83,7 +83,7 @@ class GiraffeFloatManager {
             return;
           }
         });
-        this.sub_windowClass.setUIContent("../components/mainpage/MainDebugPage", (err: BusinessError) => {
+        this.sub_windowClass.setUIContent("components/mainpage/MainDebugPage", (err: BusinessError) => {
         // this.sub_windowClass.loadContentByName("MainDebugPage23", (err: BusinessError) => {
           let errCode: number = err.code;
           if (errCode) {

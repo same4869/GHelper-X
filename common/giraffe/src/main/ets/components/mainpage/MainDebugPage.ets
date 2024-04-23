@@ -1,10 +1,13 @@
 import { MLog } from '@comm/commonlib/src/main/ets/utils/log/MLog';
 import FloatManager from '../../float/GiraffeFloatManager';
 
-// @Entry({routeName: "MainDebugPage"})
+@Entry
 @Component
 export struct MainDebugPage {
   @State message: string = 'Hello World';
+
+  aboutToAppear(): void {
+  }
 
   build() {
     Column() {

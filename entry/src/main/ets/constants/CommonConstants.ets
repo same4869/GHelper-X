@@ -13,4 +13,9 @@ export class CommonConstants {
    * The font weight of text in the tab.
    */
   static readonly TAB_ITEM_FONT_WEIGHT: number = 500;
+
+  // space
+  static readonly SPACE_8: number = 8;
+  static readonly SPACE_12: number = 12;
+  static readonly SPACE_16: number = 16;
 }
