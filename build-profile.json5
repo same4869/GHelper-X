@@ -40,6 +40,10 @@
     {
       "name": "giraffe",
       "srcPath": "./common/giraffe",
+    },
+    {
+      "name": "network",
+      "srcPath": "./common/network",
     }
   ]
 }

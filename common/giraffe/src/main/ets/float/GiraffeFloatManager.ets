@@ -7,6 +7,8 @@ import { MLog } from '@comm/commonlib/Index';
 import { window } from '@kit.ArkUI'
 import { BusinessError } from '@ohos.base';
 
+import('../components/mainpage/MainDebugPage')
+
 const TAG = "[GiraffeFloatManager]"
 
 class GiraffeFloatManager {
@@ -83,8 +85,8 @@ class GiraffeFloatManager {
             return;
           }
         });
-        this.sub_windowClass.setUIContent("components/mainpage/MainDebugPage", (err: BusinessError) => {
-        // this.sub_windowClass.loadContentByName("MainDebugPage23", (err: BusinessError) => {
+        this.sub_windowClass.loadContentByName('MainDebugPage', (err: BusinessError) => {
+          // this.sub_windowClass.loadContentByName("MainDebugPage23", (err: BusinessError) => {
           let errCode: number = err.code;
           if (errCode) {
             MLog.error(TAG, 'Failed to load the content. Cause:' + JSON.stringify(err));
